@@ -4,10 +4,13 @@ class ColorManager {
   static Color primary = HexColor.fromHex("#035bf9");
   static Color secundary = HexColor.fromHex("#4749aa");
 
+  static Color white = HexColor.fromHex("#ffff");
+
   static Color blueDark1 = HexColor.fromHex("#002d68");
   static Color blueDark2 = HexColor.fromHex("#123850");
 
-  static Color grey1 = HexColor.fromHex("#D3D3D3");
+  static Color grey = HexColor.fromHex("#dcdcdc");
+  static Color grey1 = HexColor.fromHex("#bdbdbd");
 }
 
 extension HexColor on Color {
