@@ -6,6 +6,8 @@ class ColorManager {
 
   static Color blueDark1 = HexColor.fromHex("#002d68");
   static Color blueDark2 = HexColor.fromHex("#123850");
+
+  static Color grey1 = HexColor.fromHex("#D3D3D3");
 }
 
 extension HexColor on Color {
