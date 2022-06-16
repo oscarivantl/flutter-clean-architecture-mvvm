@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture_mvvm/presentation/styles/color_manager.dart';
+import 'package:flutter_clean_architecture_mvvm/presentation/styles/font_manager.dart';
+import 'package:flutter_clean_architecture_mvvm/presentation/styles/styles_manager.dart';
 import 'package:flutter_clean_architecture_mvvm/presentation/styles/value_manager.dart';
 
 ThemeData getApplicationTheme() {
@@ -15,8 +17,16 @@ ThemeData getApplicationTheme() {
       color: ColorManager.white,
       shadowColor: ColorManager.grey,
       elevation: AppSize.s8
-    )
+    ),
+
     // App bar theme
+    appBarTheme: AppBarTheme(
+      centerTitle: true,
+      color: ColorManager.primary,
+      elevation: AppSize.s8,
+      shadowColor: ColorManager.grey,
+      titleTextStyle: getRegularStyle(color: ColorManager.white, fontSize: FontSize.s16)
+      )
 
     // Button theme
 
